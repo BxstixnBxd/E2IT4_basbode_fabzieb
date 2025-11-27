@@ -37,3 +37,13 @@ main{
   padding: 20px;
   text-align: center;
 }
+
+.banner {
+  background-color: #d3d4e6b3;
+  background-image: url("BilderFürWebseite/Banner.jpg");
+  color: hwb(0 100% 0%);
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
