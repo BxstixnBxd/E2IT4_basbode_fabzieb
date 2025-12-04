@@ -1,6 +1,5 @@
 nav {
   background-color: #d3d4e6b3;   
-  margin: 20px;
   padding: 20px;
   border: 2px solid black;
 }
@@ -21,19 +20,25 @@ a{
 }
 
 header{
-     background-color: #d3d4e6b3;
+  background-color: #d3d4e6b3;
   color: hwb(0 100% 0%);
   border: 2px solid black;
-  margin: 20px;
   padding: 20px;
   text-align: center;
 }
 
 main{
-    background-color: #d3d4e6b3;
+  background-color: #d3d4e6b3;
   color: #524f4f;
   border: 2px solid black;
-  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+footer{
+  background-color: #d3d4e6b3;
+  color: #524f4f;
+  border: 2px solid black;
   padding: 20px;
   text-align: center;
 }
@@ -43,7 +48,16 @@ main{
   background-image: url("BilderFürWebseite/Banner.jpg");
   color: hwb(0 100% 0%);
   border: 2px solid black;
-  margin: 20px;
   padding: 20px;
   text-align: center;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "n"
+                       "h"
+                       "m"
+                       "f";
+  gap: 1em;
 }
