@@ -21,8 +21,162 @@
     </header>
 
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, repellat!
-        <!--Genauere Beschreibung des Restaurantes und Bilder von Gerichten-->
+
+        <form>
+            <h1>Hier können sie Essen bestellen: </h1>
+            <h2>Hauptspeisen:</h2>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PizzaMargherita" name="Hauptspeisen" value="PizzaMargherita">
+                <label for="PizzaMargherita" class="food-text">Pizza Margherita</label>
+                <label for="PizzaMargherita" class="food-preis">Stückpreis: 10€</label>
+                <input type="number" name="pizza_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PizzaMargherita.jpg" alt="PizzaMargherita" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PizzaQuattroFormaggi" name="Hauptspeisen" value="PizzaQuattroFormaggi">
+                <label for="PizzaQuattroFormaggi" class="food-text">Pizza Quattro Formaggi</label>
+                <label for="PizzaQuattroFormaggi" class="food-preis">Stückpreis: 10€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PizzaQuattroFormaggi.jpg" alt="PizzaQuattroFormaggi" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PizzaProsciutto" name="Hauptspeisen" value="PizzaProsciutto">
+                <label for="PizzaProsciutto" class="food-text">Pizza Prosciutto</label>
+                <label for="PizzaProsciutto" class="food-preis">Stückpreis: 10€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PizzaProsciutto.jpg" alt="PizzaProsciutto" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PizzaFunghi" name="Hauptspeisen" value="PizzaFunghi">
+                <label for="PizzaFunghi" class="food-text">Pizza Funghi</label>
+                <label for="PizzaFunghi" class="food-preis">Stückpreis: 10€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PizzaFunghi.jpg" alt="PizzaFunghi" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PizzaSalami" name="Hauptspeisen" value="PizzaSalami">
+                <label for="PizzaSalami" class="food-text">Pizza Salami</label>
+                <label for="PizzaSalami" class="food-preis">Stückpreis: 10€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PizzaSalami.jpg" alt="PizzaSalami" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PizzaDiavola" name="Hauptspeisen" value="PizzaDiavola">
+                <label for="PizzaDiavola" class="food-text">Pizza Diavola</label>
+                <label for="PizzaDiavola" class="food-preis">Stückpreis: 10€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PizzaDiavola.jpg" alt="PizzaDiavola" class="food-img">
+            </div>
+
+            <h2>Beilagen:</h2>
+
+            <div class="menu-item">
+                <input type="checkbox" id="PommesFrites" name="Beilage" value="PommesFrites">
+                <label for="PommesFrites" class="food-text">Pommes Frites</label>
+                <label for="PommesFrites" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="pizza_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/PommesFrites.jpg" alt="PommesFrites" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Bratkartoffeln" name="Beilage" value="Bratkartoffeln">
+                <label for="Bratkartoffeln" class="food-text">Bratkartoffeln</label>
+                <label for="Bratkartoffeln" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Bratkartoffeln.jpg" alt="Bratkartoffeln" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Kroketten" name="Beilage" value="Kroketten">
+                <label for="Kroketten" class="food-text">Kroketten</label>
+                <label for="Kroketten" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Kroketten.jpg" alt="Kroketten" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Reis" name="Beilage" value="Reis">
+                <label for="Reis" class="food-text">Reis</label>
+                <label for="Reis" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Reis.jpg" alt="Reis" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Nudeln" name="Beilage" value="Nudeln">
+                <label for="Nudeln" class="food-text">Nudeln</label>
+                <label for="Nudeln" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Nudeln.jpg" alt="Nudeln" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Ofengemüse" name="Beilage" value="Ofengemüse">
+                <label for="Ofengemüse" class="food-text">Ofengemüse</label>
+                <label for="Ofengemüse" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Ofengemüse.jpg" alt="Ofengemüse" class="food-img">
+            </div>
+
+            <h2>Nachtisch:</h2>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Tiramisu" name="Nachtisch" value="Tiramisu">
+                <label for="Tiramisu" class="food-text">Tiramisu</label>
+                <label for="Tiramisu" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="pizza_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Tiramisu.jpg" alt="Tiramisu" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Crème brûlée" name="Nachtisch" value="Crème brûlée">
+                <label for="Crème brûlée" class="food-text">Crème brûlée</label>
+                <label for="Crème brûlée" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Crème brûlée.jpg" alt="Crème brûlée" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Apfelstrudel" name="Nachtisch" value="Apfelstrudel">
+                <label for="Apfelstrudel" class="food-text">Apfelstrudel mit Vanillesoße</label>
+                <label for="Apfelstrudel" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/ApfelstrudelmitVanillesoße.jpg" alt="Apfelstrudel" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Gemischtes Eis" name="Nachtisch" value="Gemischtes Eis">
+                <label for="Gemischtes Eis" class="food-text">Gemischtes Eis (Vanille, Schokolade, Erdbeere)</label>
+                <label for="Gemischtes Eis" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/GemischtesEis.jpg" alt="Gemischtes Eis" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Käsekuchen" name="Nachtisch" value="Käsekuchen">
+                <label for="Käsekuchen" class="food-text">Käsekuchen</label>
+                <label for="Käsekuchen" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Käsekuchen.jpg" alt="Käsekuchen" class="food-img">
+            </div>
+
+            <div class="menu-item">
+                <input type="checkbox" id="Obstsalat" name="Nachtisch" value="Obstsalat">
+                <label for="Obstsalat" class="food-text">Obstsalat</label>
+                <label for="Obstsalat" class="food-preis">Stückpreis: 5€</label>
+                <input type="number" name="essen_qty" min="1" max="9" value="1" class="qty">
+                <img src="BilderFürWebseite/Obstsalat.jpg" alt="Obstsalat" class="food-img">
+            </div>
+
+
+        </form>
+        
     </main>
 
     <footer>

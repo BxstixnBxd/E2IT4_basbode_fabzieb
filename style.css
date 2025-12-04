@@ -14,7 +14,7 @@ ul {
 }
 
 a{
-     color: #524f4f;                               
+  color: #524f4f;                               
   text-decoration: none;                        
   font-weight: bold;
 }
@@ -75,3 +75,18 @@ footer{
   margin-top: 5px;
   margin-bottom: 10px;
 }
+form {
+       padding: 1.5em;
+       max-width: 800px;
+       margin: auto;           
+}
+.food-img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 20px;
+            /* Abstand zwischen Text und Bild */
+            border: 1px solid black;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
