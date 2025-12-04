@@ -61,3 +61,17 @@ footer{
                        "f";
   gap: 1em;
 }
+
+.Rezession_Formular{
+  background-color: #e7e7ff80;
+  padding: 5px;
+  margin-top: 20px;
+ 
+}
+
+.Rezession_Formular input, textarea, select {
+  width: 100%;
+  padding: 1px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

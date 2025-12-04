@@ -21,8 +21,31 @@
     </header>
 
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias similique libero expedita, repellendus minima incidunt illo consequuntur autem fugiat saepe!</p>
-        <!--Formular für Rezensionen-->
+        <div class="Rezession_Formular">
+        <h1>Schreiben sie eine Bewertung:</h1>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">E-Mail:</label>
+    <input type="email" id="email" name="email">
+
+     <label for="datum">Besuchsdatum:</label>
+    <input type="date" id="datum" name="datum">
+
+    <label for="bewertung">Bewertung (1-5 Sterne):</label>
+    <select id="bewertung" name="bewertung">
+      <option value="1">⭐</option>
+      <option value="2">⭐⭐</option>
+      <option value="3">⭐⭐⭐</option>
+      <option value="4">⭐⭐⭐⭐</option>
+      <option value="5">⭐⭐⭐⭐⭐</option>
+    </select>
+
+    <label for="kommentar">Kommentar:</label>
+    <textarea id="kommentar" name="kommentar" rows="4"></textarea>
+
+    <button type="submit">Bewertung abschicken</button>
+        </div>
     </main>
     </div>
 </body>
