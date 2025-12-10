@@ -74,6 +74,7 @@ footer{
   padding: 1px;
   margin-top: 5px;
   margin-bottom: 10px;
+  resize: vertical;
 }
 form {
        padding: 1.5em;
@@ -90,3 +91,19 @@ form {
             border: 1px solid black;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+
+.Img_UeberUns{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    max-width: 600px;   
+    margin: 20px auto;  
+}
+
+.Img_UeberUns img {
+    width: 100%;
+    height: 200px;      
+    object-fit: cover;  
+    border-radius: 8px;
+    border: 2px solid black;
+}
