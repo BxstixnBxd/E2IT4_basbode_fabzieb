@@ -1,10 +1,10 @@
 nav {
-  background-color: #d3d4e6b3;
+  background-color: #d3d4e6;
   padding: 20px;
   border: 2px solid black;
 
   position: sticky;
-  top: 15px;
+  top: 0px;
 }
 
 ul {
