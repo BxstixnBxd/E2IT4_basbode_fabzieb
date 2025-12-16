@@ -164,3 +164,23 @@ form {
   margin-bottom: 15px;
   text-align: left;
 }
+
+.faq-bereich {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #e7e7ff80;
+  border: 2px solid black;
+}
+
+.faq-eintrag {
+  background-color: #d3d4e6b3;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.faq-eintrag p {
+  margin-top: 10px;
+}
+
