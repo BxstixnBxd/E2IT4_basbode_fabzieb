@@ -184,3 +184,21 @@ form {
   margin-top: 10px;
 }
 
+/* Test mit Modal */
+dialog{
+  padding: 2em;
+  border-radius: 8px;
+}
+
+dialog::backdrop{
+  background: rgba(0, 0, 0, 0.5) 
+}
+
+#modalButton{
+  padding: 15px 50px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#modalButton:hover{
+  background-color: #ccc;
+}
