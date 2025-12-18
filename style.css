@@ -70,6 +70,10 @@ footer {
   gap: 1em;
 }
 
+.qty{
+  margin-left: 10px;
+}
+
 .Rezession_Formular {
   background-color: #e7e7ff80;
   padding: 5px;
@@ -200,5 +204,42 @@ dialog::backdrop{
   cursor: pointer;
 }
 #modalButton:hover{
-  background-color: #ccc;
+  background-color: hwb(0 90% 8%);
+}
+
+
+/* Übersicht in dem Modal Fenster*/
+#übersicht{
+  border: 2px solid black;
+  padding: 5px;
+  margin-left: 80px;
+}
+.übersicht123{
+  border: 1px dashed black;
+  padding: 5px;
+}
+
+.form-container {
+  width: 400px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 100px; /* feste Breite für Labels */
+  margin-right: 10px;
+  text-align: right; /* Label rechts ausrichten */
+}
+
+.form-group input {
+  flex: 1; /* Input nimmt den restlichen Platz */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }

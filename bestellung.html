@@ -181,8 +181,45 @@
 
         <!-- Modal - Fenster -->
         <dialog id="modal">
-            <h2>Kontaktdaten eingeben: </h2>
-            <p>Nur zum Testen erstmal</p>
+
+            <h2>Bitte geben Sie Ihre Kontaktdaten hier ein: </h2>
+
+            <form class="form-container">
+                <div class="form-group">
+                    <label for="name">Vor- und Nachname:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Adresse:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+            
+            </form>
+            
+            <table id="übersicht">
+                <tr>
+                    <td class="übersicht123">PizzaMargherita</td>
+                    <td class="übersicht123">Anzahl: 2</td>
+                    <td class="übersicht123">Preis: 20€</td>
+                </tr>
+                <tr>
+                    <td class="übersicht123">PizzaDiavola</td>
+                    <td class="übersicht123">Anzahl: 1</td>
+                    <td class="übersicht123">Preis: 10€</td>
+                </tr>
+                 <tr>
+                    <td class="übersicht123">PommesFrites</td>
+                    <td class="übersicht123">Anzahl: 1</td>
+                    <td class="übersicht123">Preis: 5€</td>
+                </tr>
+
+            </table>
 
             <form method="dialog">
                 <button>Bestellen</button>
