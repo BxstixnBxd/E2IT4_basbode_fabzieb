@@ -10,15 +10,18 @@ nav {
 
   position: sticky;
   top: 0px;
+
+  width: 100%;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 150px;
+nav ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  display: flex; 
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
 }
 
 a {
@@ -51,6 +54,10 @@ footer {
   text-align: center;
 }
 
+*{
+  box-sizing: border-box;
+}
+
 .banner {
   background-color: #d3d4e6b3;
   background-image: url("BilderFürWebseite/Banner.jpg");
@@ -68,6 +75,8 @@ footer {
     "m"
     "f";
   gap: 1em;
+
+  width: 100%;
 }
 
 .qty{
@@ -97,15 +106,6 @@ form {
   margin: auto;
 }
 
-.food-img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-left: 20px;
-  border: 1px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
 .Img_UeberUns {
   display: grid;
@@ -130,6 +130,16 @@ form {
   border-bottom: 1px solid #ccc;
 }
 
+.food-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .menu-item input[type="checkbox"] {
   margin-right: 5px;
   /* Abstand zwischen der Checkbox und dem Text */
@@ -140,12 +150,13 @@ form {
   font-size: 1.2em;
 }
 
-#Oeffnungszeiten{
-   width: 350px;              
-    padding: 20px;             
-    border-radius: 8px;        
-    font-family: Arial, sans-serif;
-     margin: 20px auto;
+
+#Oeffnungszeiten { 
+  width: 100%; 
+  max-width: 350px; /* optional */ 
+  padding: 20px; 
+  border-radius: 8px; 
+  margin: 20px auto; 
 }
 
 #Oeffnungszeiten table {
@@ -190,8 +201,11 @@ form {
 
 /* Test mit Modal */
 dialog{
-  padding: 2em;
-  border-radius: 8px;
+  width: 90%;
+  max-width: 500px; 
+  padding: 2em; 
+  border-radius: 8px; 
+  margin: auto;
 }
 
 dialog::backdrop{
@@ -212,17 +226,17 @@ dialog::backdrop{
 #übersicht{
   border: 2px solid black;
   padding: 5px;
-  margin-left: 80px;
+  margin: 0 auto;
 }
 .übersicht123{
   border: 1px dashed black;
   padding: 5px;
 }
 
-.form-container {
-  width: 400px;
-  margin: 50px auto;
-  font-family: Arial, sans-serif;
+
+.form-container { 
+  width: 100%; 
+  max-width: 400px;
 }
 
 .form-group {
@@ -243,3 +257,109 @@ dialog::backdrop{
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* Für Responsive Design bei Bestellungen */
+@media (max-width: 550px) {
+
+  .menu-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .food-text {
+    order: 1;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+
+  .food-preis {
+    order: 2;
+    margin-right: auto;
+  }
+
+  .menu-item input[type="checkbox"] {
+    order: 2;
+    margin-right: 70px;
+  }
+
+  .qty {
+    order: 3;
+    width: auto;          
+    margin: 10px 0;
+  }
+
+  .food-img {
+    order: 4;
+    width: auto;
+    max-width: 150px;
+    height: auto;
+    margin: 10px auto 0;
+    display: block;
+  }
+  
+  /* MODAL */
+  dialog {
+    position: fixed;                 /* verhindert "oben kleben" */
+    top: 50%;                        /* vertikal zentrieren */
+    left: 50%;                       /* horizontal zentrieren */
+    transform: translate(-50%, -50%);
+
+    width: calc(100% - 20px);        /* 10px Rand links + rechts */
+    max-width: 400px;                /* optional, verhindert Überbreite */
+    padding: 1em;
+    margin: 0;                       /* wichtig! sonst verschiebt es sich */
+    box-sizing: border-box;          /* verhindert Überlauf */
+    border-radius: 8px;
+  }
+
+  dialog * {
+    font-size: 0.9rem;
+  }
+
+  /* TABELLE */
+  #übersicht {
+    width: 100%;
+    max-width: none;
+    margin: 10px auto;          /* zentriert */
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;         /* optional, wirkt sauberer */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #übersicht td {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+
+  /* FORMULAR */
+  .form-container {
+    width: 100%;
+    padding: 0 5px;
+    margin: 10px auto;
+    box-sizing: border-box;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .form-group label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+
+
