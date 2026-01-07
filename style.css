@@ -140,14 +140,6 @@ form {
   font-size: 1.2em;
 }
 
-#Oeffnungszeiten{
-   width: 350px;              
-    padding: 20px;             
-    border-radius: 8px;        
-    font-family: Arial, sans-serif;
-     margin: 20px auto;
-}
-
 #Oeffnungszeiten table {
     margin-left: auto;
     margin-right: auto;     
@@ -242,4 +234,38 @@ dialog::backdrop{
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.faq-eintrag summary:hover {
+  color: #000;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;          
+  justify-content: center;  
+  gap: 40px;
+  margin: 40px auto;
+}
+
+#Anfahrt,
+#Oeffnungszeiten {
+  width: 100%;        
+  max-width: 500px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: #d3d4e6b3;   
+}
+
+#Anfahrt iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  border: 2px solid black;
+  display: block;
 }
