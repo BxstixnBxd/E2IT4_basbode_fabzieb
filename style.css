@@ -142,7 +142,6 @@ form {
 
 .menu-item input[type="checkbox"] {
   margin-right: 5px;
-  /* Abstand zwischen der Checkbox und dem Text */
 }
 
 .food-text {
@@ -246,13 +245,13 @@ dialog::backdrop{
 }
 
 .form-group label {
-  width: 100px; /* feste Breite für Labels */
+  width: 100px; 
   margin-right: 10px;
-  text-align: right; /* Label rechts ausrichten */
+  text-align: right; 
 }
 
 .form-group input {
-  flex: 1; /* Input nimmt den restlichen Platz */
+  flex: 1; 
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -301,16 +300,16 @@ dialog::backdrop{
   
   /* MODAL */
   dialog {
-    position: fixed;                 /* verhindert "oben kleben" */
-    top: 50%;                        /* vertikal zentrieren */
-    left: 50%;                       /* horizontal zentrieren */
+    position: fixed;                 
+    top: 50%;                        
+    left: 50%;                       
     transform: translate(-50%, -50%);
 
-    width: calc(100% - 20px);        /* 10px Rand links + rechts */
-    max-width: 400px;                /* optional, verhindert Überbreite */
+    width: calc(100% - 20px);        
+    max-width: 400px;                
     padding: 1em;
-    margin: 0;                       /* wichtig! sonst verschiebt es sich */
-    box-sizing: border-box;          /* verhindert Überlauf */
+    margin: 0;                       
+    box-sizing: border-box;          
     border-radius: 8px;
   }
 
@@ -322,10 +321,10 @@ dialog::backdrop{
   #übersicht {
     width: 100%;
     max-width: none;
-    margin: 10px auto;          /* zentriert */
+    margin: 10px auto;          
     padding: 5px;
     box-sizing: border-box;
-    text-align: center;         /* optional, wirkt sauberer */
+    text-align: center;         
     margin-left: 0;
     margin-right: 0;
   }
@@ -360,8 +359,6 @@ dialog::backdrop{
     box-sizing: border-box;
   }
 }
-
-
 
 nav a:hover {
   color: #000;
