@@ -151,6 +151,7 @@ form {
 
 
 
+
 #Oeffnungszeiten table {
     margin-left: auto;
     margin-right: auto;     
@@ -273,7 +274,7 @@ dialog::backdrop{
 
   .menu-item input[type="checkbox"] {
     order: 2;
-    margin-right: 50px;
+    margin-right: 70px;
   }
 
   .qty {
@@ -350,10 +351,6 @@ dialog::backdrop{
   .form-group input {
     width: 100%;
     box-sizing: border-box;
-  }
-
-  nav ul{
-    gap: 20px;
   }
 }
 
