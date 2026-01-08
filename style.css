@@ -1,10 +1,16 @@
+:root{
+  --grey1: #d3d4e6b3;
+  --grey2: #d3d4e6; 
+  --darkgrey: #524f4f;
+  --lightgrey: #e7e7ff80; 
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 nav {
-  background-color: #d3d4e6;
+  background-color: var(--grey2);
   padding: 20px;
   border: 2px solid black;
 
@@ -25,13 +31,13 @@ nav ul {
 }
 
 a {
-  color: #524f4f;
+  color: var(--darkgrey);
   text-decoration: none;
   font-weight: bold;
 }
 
 header {
-  background-color: #d3d4e6b3;
+  background-color: var(--grey1);
   color: hwb(0 100% 0%);
   border: 2px solid black;
   padding: 20px;
@@ -39,16 +45,16 @@ header {
 }
 
 main {
-  background-color: #d3d4e6b3;
-  color: #524f4f;
+  background-color: var(--grey1);
+  color: var(--darkgrey);
   border: 2px solid black;
   padding: 20px;
   text-align: center;
 }
 
 footer {
-  background-color: #d3d4e6b3;
-  color: #524f4f;
+  background-color: var(--grey1);
+  color: var(--darkgrey);
   border: 2px solid black;
   padding: 20px;
   text-align: center;
@@ -59,7 +65,7 @@ footer {
 }
 
 .banner {
-  background-color: #d3d4e6b3;
+  background-color: var(--grey1);
   background-image: url("BilderFürWebseite/Banner.jpg");
   color: hwb(0 100% 0%);
   border: 2px solid black;
@@ -84,7 +90,7 @@ footer {
 }
 
 .Rezession_Formular {
-  background-color: #e7e7ff80;
+  background-color: var(--lightgrey);
   padding: 5px;
   margin-top: 20px;
 
@@ -160,12 +166,12 @@ form {
 .rezensionen-liste {
   margin-top: 40px;
   padding: 20px;
-  background-color: #e7e7ff80;
+  background-color: var(--lightgrey);
   border: 2px solid black;
 }
 
 .rezension-karte {
-  background-color: #d3d4e6b3;
+  background-color: var(--grey1);
   border: 1px solid black;
   padding: 15px;
   margin-bottom: 15px;
@@ -175,12 +181,12 @@ form {
 .faq-bereich {
   margin-top: 40px;
   padding: 20px;
-  background-color: #e7e7ff80;
+  background-color: var(--lightgrey);
   border: 2px solid black;
 }
 
 .faq-eintrag {
-  background-color: #d3d4e6b3;
+  background-color: var(--grey1);
   border: 1px solid black;
   padding: 10px;
   margin-bottom: 10px;
@@ -380,7 +386,7 @@ nav a:hover {
   padding: 20px;
   border: 2px solid black;
   border-radius: 8px;
-  background-color: #d3d4e6b3;   
+  background-color: var(--grey1);   
 }
 
 #Anfahrt iframe {
