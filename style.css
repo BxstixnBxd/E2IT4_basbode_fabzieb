@@ -150,13 +150,6 @@ form {
 }
 
 
-#Oeffnungszeiten { 
-  width: 100%; 
-  max-width: 350px; /* optional */ 
-  padding: 20px; 
-  border-radius: 8px; 
-  margin: 20px auto; 
-}
 
 #Oeffnungszeiten table {
     margin-left: auto;
