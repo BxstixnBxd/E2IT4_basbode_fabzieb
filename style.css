@@ -358,6 +358,10 @@ dialog::backdrop{
     width: 100%;
     box-sizing: border-box;
   }
+
+  nav ul {
+    gap: 20px;
+  }
 }
 
 nav a:hover {
