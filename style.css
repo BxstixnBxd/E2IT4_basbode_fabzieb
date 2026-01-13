@@ -9,14 +9,15 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav {
+#navbar-wrapper {
+  position: sticky;
+  top: 0;
+}
+
+.navbar {
   background-color: var(--grey2);
   padding: 20px;
   border: 2px solid black;
-
-  position: sticky;
-  top: 0px;
-
   width: 100%;
 }
 
@@ -154,9 +155,6 @@ form {
   margin-right: auto;
   font-size: 1.2em;
 }
-
-
-
 
 #Oeffnungszeiten table {
     margin-left: auto;
